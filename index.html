@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+            text {
+                font-family: Monospace;
+                font-size: 20;
+                fill: white;
+                fill-opacity: 0.8;
+            }
+            .column {
+              float: left;
+              width: 50%;
+            }
+
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="asteroids.js"></script>
+    </head>
+    <body>
+        <h1>Asteroids</h1>
+
+        <div class="row">
+
+            <div class="column"><svg id="canvas" width="600" height="600">
+                <text x="20" y="590">Level: </text>
+                <text id="level" x="100" y="590">0</text>
+                <text x="460" y="590">Score: </text>
+                <text id="score" x="540" y="590">0</text>
+            </svg></div>
+
+            <div class="column"><text style="font-size:14;font-family:arial">
+                <u>Starting the game</u>
+                <ul>
+                    <li>Click anywhere in canvas to start with level 1, OR</li>
+                    <li>Press any key from "1" - "9" to start with specific level</li>
+                </ul>
+                <u>To move your spaceship</u>
+                <ul>
+                    <li>&uarr; - move forwards</li>
+                    <li>&darr; - move backwards</li>
+                    <li>&larr; - rotate left</li>
+                    <li>&rarr; - rotate right</li>
+                </ul>
+                <u>To attack</u><br> 
+                <ul>
+                    <li>spacebar - attack</li>
+                    <li>"A" - special attack (costs 5 energy)</li>
+                </ul>
+                <u>Hitpoints</u><br> 
+                Your hitpoints is shown at the top right corner. When your space ship collides with asteroids or another spaceship, your hitpoints will be deducted by 1. It can be restored by collecting hearts that can be dropped by asteroids by chance.
+                <br><br>
+                <u>Energy bars</u><br> 
+                Your energy bars is shown at the top left corner. After a small asteroid is destroy, it is turned into a debris and you are able to collect it to increase your energy points. Using a special attack costs 5 energy.
+                <br><br>
+                <u>Levels</u><br> 
+                Each time you level up, you will be challenged by a enemy spaceship. You level up as your score goes higher. The higher the level, the stronger the asteroids and other spaceships are. Higher level asteroids and enemy spaceship moves faster, a higher level enemy spaceship also aims at the player more easily and accurately.
+                <br><br>
+                <u>Pausing the game</u><br> 
+                Click anywhere in canvas to pause the game at anytime, click again to resume.
+                <br><br>
+                <u>Game over</u><br> 
+                The game ends when you have no hitpoints left. To restart the game, click anywhere in the canvas, then you can click again or press the one of the number keys to start the game.
+            </text></div>
+
+        </div>
+    </body>
+</html>
+
+
