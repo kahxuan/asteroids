@@ -1,7 +1,96 @@
-BODY, H2, H3, H4, H5, H6, TH, TD {
-font-family: arial, helvetica, sans-serif;
+.index-body {
+    overflow: hidden;
 }
-H1 {
-    font-size: 38px;
-    font-family: arial, helvetica, sans-serif;
+
+.center-container {
+    text-align:center;
+    width: 100%;
+    font-family: monospace;
+}
+
+svg {
+    background-color: rgb(41, 41, 36);
+    margin: auto;
+    display: block;
+}
+text {
+    fill: white;
+    fill-opacity: 0.8;
+}
+
+.title {
+    margin-bottom: 0px;
+}
+
+a {
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+.header {
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+}
+
+.section {
+    margin: auto;
+    width: 60%;
+    min-width: 580px;
+    max-width: 700px;
+    padding: 20px 30px 20px 30px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a6a6a6;
+    border-radius: 12px;
+    font-family: Arial;
+}
+
+.section-title {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.arrows {
+    display: flex;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    justify-content: space-between;
+}
+
+.arrows-desc {
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+
+.attack {
+    display: flex;
+    padding-left: 140px;
+    padding-right: 220px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    justify-content: space-between;
+}
+
+.attack-desc {
+    display: flex;
+    padding-left: 170px;
+    padding-right: 130px;
+    justify-content: space-between;
+    padding-bottom: 10px;
 }
